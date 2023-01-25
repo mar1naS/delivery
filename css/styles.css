@@ -1,6 +1,38 @@
 /*================ /RESET ===============*/
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* убрал в ссылках все подчеркивания */
+.link,
+.logo {
+  text-decoration: none;
+}
+/* класс чтобы убрать в списках марикровку */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 /*================ /ROOT ===============*/
 /*================ /CONTAINER ===============*/
+
+.container {
+  width: 1280px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+h1,
+h2,
+p {
+  margin: 0;
+}
 
 /*================ /START MARYNA ===============*/
 /*================ /FINISH MARYNA ===============*/
@@ -9,6 +41,87 @@
 /*================ FINISH KSENIIA ===============*/
 
 /*================ START VITALIY ===============*/
+
+.section-hero {
+  position: relative;
+}
+
+.hero-box {
+  padding-top: 160px;
+  padding-bottom: 164px;
+  width: 502px;
+}
+
+.hero-title {
+  margin-bottom: 28px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  color: #2c2c2c;
+}
+
+.hero-title::before {
+  content: "";
+  position: absolute;
+  top: -90px;
+  left: 0;
+  width: 100%;
+  height: 7px;
+  background: #d9d9d9;
+}
+
+.text {
+  margin-bottom: 40px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #2c2c2c;
+}
+
+.btn-order {
+  width: 98px;
+  height: 32px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+
+  background-color: #bbf330;
+  border-radius: 30px;
+  border: 0px;
+}
+
+/* ============slider=========== */
+
+.swiper {
+  position: absolute;
+
+  top: 14px;
+  right: 16px;
+
+  width: 580px;
+  height: 580px;
+}
+
+.swiper .item {
+  width: 100%;
+  height: 100%;
+  padding: 26px;
+  overflow: hidden;
+
+  background: #fefefe;
+  border: 26px solid #ffe550;
+  border-radius: 269px;
+}
+
 /*================ FINISH VITALIY ===============*/
 
 /*================ START DMYTRO K ===============*/
