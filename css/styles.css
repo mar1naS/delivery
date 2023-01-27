@@ -17,7 +17,19 @@ img {
   padding: 0;
   margin: 0;
 }
+
+.btn {
+  cursor: pointer;
+}
+
 /*================ /ROOT ===============*/
+
+:root {
+  --time-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --bcg-modal: rgba(94, 99, 99, 0.7);
+  --yellow-main: #ffe550;
+  --bodrer-btn-close: rgba(0, 0, 0, 0.1);
+}
 /*================ /CONTAINER ===============*/
 
 .container {
@@ -25,9 +37,13 @@ img {
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
+
 h1,
-h2 {
+h2,
+p {
+
   margin: 0;
 }
 
@@ -38,6 +54,43 @@ h2 {
 /*================ FINISH KSENIIA ===============*/
 
 /*================ START VITALIY ===============*/
+
+
+.section-hero {
+  position: relative;
+}
+
+.hero-box {
+  padding-top: 160px;
+  padding-bottom: 164px;
+  width: 502px;
+}
+
+.hero-title {
+  margin-bottom: 28px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  color: #2c2c2c;
+}
+
+.hero-title::before {
+  content: "";
+  position: absolute;
+  top: -90px;
+  left: 0;
+  width: 100%;
+  height: 7px;
+  background: #d9d9d9;
+}
+
+.text-hero {
+  margin-bottom: 40px; }
+
+
 .section-menu {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -55,10 +108,146 @@ h2 {
 }
 
 .description-menu {
+
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
+
+  line-height: 150%;
+  color: #2c2c2c;
+}
+
+.btn-order {
+  width: 98px;
+  height: 32px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+
+  background-color: #bbf330;
+  border-radius: 30px;
+  border: 0px;
+}
+
+/* ============slider=========== */
+
+.swiper {
+  position: absolute;
+
+  top: 14px;
+  right: 16px;
+
+  width: 580px;
+  height: 580px;
+}
+
+.swiper .item {
+  width: 100%;
+  height: 100%;
+  padding: 26px;
+  overflow: hidden;
+
+  background: #fefefe;
+  border: 26px solid var(--yellow-main);
+  border-radius: 300px;
+}
+
+/* =======================Modal window============== */
+
+.backdrop-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: opacity 250ms var(--time-function);
+  z-index: 500;
+
+  background-color: var(--bcg-modal);
+}
+
+.backdrop-modal.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+
+  width: 458px;
+  height: 449px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: var(--yellow-main);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 30px;
+}
+
+.btn-close {
+  position: absolute;
+  display: flex;
+
+  top: 12px;
+  right: 12px;
+  margin: 0;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms var(--time-function);
+}
+
+.btn-close:hover {
+  background-color: #bbf330;
+}
+
+.btn-title {
+  text-align: center;
+  margin-bottom: 20px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  color: #2c2c2c;
+}
+
+.form {
+  display: block;
+  text-align: center;
+  padding-bottom: 32px;
+  flex-wrap: nowrap;
+}
+
+.mail {
+  justify-content: center;
+  padding-bottom: 24px;
+}
+.phone {
+  display: inline-block;
+  padding-bottom: 24px;
+}
+
+.btn-send {
+  align-items: center;
+  justify-content: center;
+}
+.form .text {
+  text-align: left;
   line-height: 19px;
   text-align: center;
   color: #2c2c2c;
@@ -86,6 +275,7 @@ h2 {
 
 .menu-list .item:not(:nth-last-child(-n + 3)) {
   margin-bottom: 32px;
+
 }
 /*================ FINISH VITALIY ===============*/
 
