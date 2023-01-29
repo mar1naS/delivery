@@ -18,7 +18,7 @@ img {
   margin: 0;
 }
 /*================ /ROOT ===============*/
-/*================ /CONTAINER ===============*/
+/*================ /CONTAINER/body ===============*/
 
 .container {
   width: 1280px;
@@ -31,10 +31,129 @@ h2 {
   margin: 0;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #2C2C2C;
+  background-color: #FFFFFF;
+}
+
+img {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
 /*================ /START MARYNA ===============*/
 /*================ /FINISH MARYNA ===============*/
 
 /*================ /START KSENIIA ===============*/
+
+.lower-cont {
+display: flex;
+align-items: center;
+background-image: url(../images/Rectangle\ 694.svg);
+background-size: cover;
+column-gap: 90px;
+}
+
+.lower-cont-l {
+  position: relative;
+  width:550px;
+  height: 550px;
+  border: 5px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+
+.apple-cont{
+  padding: 24px 24px;
+  width: 502px;
+  height: 502px;
+  background-image: url(../images/Ellipse-background.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.apple-img{
+  position: absolute;
+  left: 84px;
+  bottom: 102px;  
+  width: 396px;
+  height: 502px;
+  z-index: 5;
+}
+
+.apple-shadow{
+  width: 352px;
+  position:absolute;
+  left:0px;
+  bottom:0px;
+
+  transform: translate(30%, -20%);
+  z-index: 4;
+}
+
+.lower-cont-r {
+  max-width: 573px;
+}
+
+.hero-subhead {
+  max-width: 526.17px;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.19;
+    margin-left: auto;
+    margin-right: 98px;
+    padding-top: 260px;
+}
+
+.descrip {
+max-width: 500px;
+line-height: 1.5;
+}
+
+.special-item-text {
+  line-height: 1.5;
+}
+
+.hero-modal-btn {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+  color: #2C2C2C;
+  background-color: #FFFFFF;
+  border: 2px solid #7EB101;
+  border-radius: 30px;
+  padding: 10px 22px;
+  margin-bottom: 100px;
+}
+
+.hero-special-list {
+  display: flex;
+  column-gap: 67px;
+}
+
+/* .hero-special-item {
+  width: 253px;
+} */
+
+.hero-sub-descrip {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
+  margin-bottom: 16px;
+}
+.delivery-icon {
+  /* fill:#7EB101; */
+  /* background-color:#FFFFFF; */
+}
+/* .delivery-icon:hover {
+  background-color: #7EB101;
+  fill:#7EB101; */
+}
 /*================ FINISH KSENIIA ===============*/
 
 /*================ START VITALIY ===============*/
