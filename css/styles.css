@@ -86,7 +86,7 @@ column-gap: 90px;
   z-index: 5;
 }
 
-.apple-shadow{
+.apple-shadow {
   width: 352px;
   position:absolute;
   left:0px;
@@ -146,14 +146,14 @@ line-height: 1.5;
   line-height: 140%;
   margin-bottom: 16px;
 }
-.delivery-icon {
+/* .delivery-icon {
   /* fill:#7EB101; */
   /* background-color:#FFFFFF; */
-}
+
 /* .delivery-icon:hover {
   background-color: #7EB101;
   fill:#7EB101; */
-}
+
 /*================ FINISH KSENIIA ===============*/
 
 /*================ START VITALIY ===============*/
@@ -206,6 +206,7 @@ line-height: 1.5;
 .menu-list .item:not(:nth-last-child(-n + 3)) {
   margin-bottom: 32px;
 }
+
 /*================ FINISH VITALIY ===============*/
 
 /*================ START DMYTRO K ===============*/
