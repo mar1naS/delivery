@@ -41,7 +41,7 @@ ul {
   --dark-green-color: #7eb101;
   --primary-bcg-color: #fefefe;
   --yellow-hover-color: #ffe450;
-  --text-hover-color: #BBF330;
+  --text-hover-color: #bbf330;
 }
 /*================ /CONTAINER ===============*/
 
@@ -311,9 +311,8 @@ body {
   background-repeat: no-repeat;
   /* background-position: bottom left 216px, bottom right 16px, bottom right 134px, bottom left 53px,
     bottom left 340px, bottom center, bottom right 282px, bottom left 310px; */
-  background-position: bottom left 23.82%, bottom right 4.1%, bottom right 17.58%, bottom left 11.79%,
-    bottom left 47.11%, bottom center, bottom right 25.43%, bottom left 32.88%;
-  
+  background-position: bottom left 23.82%, bottom right 4.1%, bottom right 17.58%,
+    bottom left 11.79%, bottom left 47.11%, bottom center, bottom right 25.43%, bottom left 32.88%;
 }
 
 .footer-up {
@@ -357,12 +356,6 @@ body {
   padding-bottom: 18px;
 }
 
-.footer-title {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.5;
-}
-
 .ftr-sbscr-form {
   display: flex;
   justify-content: flex-end;
@@ -371,7 +364,31 @@ body {
   margin-bottom: 12px;
 }
 
+.footer-form-title {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.footer-form-input {
+  width: 279px;
+  height: 42px;
+  padding: 12px;
+  border: 2px solid #ffe550;
+  border-radius: 30px;
+  margin-right: 13px;
+}
+
+.footer-form-input::placeholder {
+  color: #505050;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
 .btn-light {
+  display: inline-block;
   padding: 11px 22px;
   border: 2px solid var(--dark-green-color);
   border-radius: 30px;
@@ -383,7 +400,7 @@ body {
 }
 
 .btn-light:is(:hover, :after) {
-  border: 2px solid #FFE450;
+  border: 2px solid #ffe450;
 }
 
 .footer-text {
