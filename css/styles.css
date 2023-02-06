@@ -16,6 +16,8 @@ img {
 /* класс чтобы убрать в списках марикровку */
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .btn {
@@ -41,7 +43,7 @@ ul {
   --dark-green-color: #7eb101;
   --primary-bcg-color: #fefefe;
   --yellow-hover-color: #ffe450;
-  --text-hover-color: #BBF330;
+  --text-hover-color: #bbf330;
 }
 /*================ /CONTAINER ===============*/
 
@@ -67,14 +69,13 @@ p {
 
 body {
   font-family: var(--primary-font-family);
+  font-size: 16px;
+  font-weight: 400;
   color: var(--primary-text-color);
   background-color: var(--primary-bcg-color);
 }
 /*================ /START MARYNA ===============*/
 /*================ /FINISH MARYNA ===============*/
-
-/*================ /START KSENIIA ===============*/
-/*================ FINISH KSENIIA ===============*/
 
 /*================ START VITALIY ===============*/
 
@@ -206,8 +207,7 @@ body {
 
   width: 458px;
   height: 449px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 32px;
   background-color: var(--yellow-main);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
   border-radius: 30px;
@@ -235,7 +235,7 @@ body {
   background-color: #bbf330;
 }
 
-.btn-title {
+.form-title {
   text-align: center;
   margin-bottom: 20px;
 
@@ -247,34 +247,145 @@ body {
   color: #2c2c2c;
 }
 
-.form {
+.input-type {
   display: block;
-  text-align: center;
-  padding-bottom: 32px;
-  flex-wrap: nowrap;
+  width: 100%;
 }
 
-.mail {
-  justify-content: center;
-  padding-bottom: 24px;
-}
-.phone {
-  display: inline-block;
-  padding-bottom: 24px;
-}
-
-.btn-send {
+/*================ /START KSENIIA ===============*/
+.lower-cont {
+  position: relative;
+  top: -161px;
+  display: flex;
   align-items: center;
-  justify-content: center;
+  background-image: url(../images/Rectangle694.svg);
+  background-size: cover;
+  column-gap: 90px;
 }
-.form .text {
-  text-align: left;
+
+.lower-cont-l {
+  position: relative;
+  width: 550px;
+  height: 550px;
+  border: 5px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+
+.apple-cont {
+  padding: 24px 24px;
+  width: 502px;
+  height: 502px;
+  background-image: url(../images/Ellipse-background.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.apple-img {
+  position: absolute;
+  left: 84px;
+  bottom: 102px;
+  width: 396px;
+  height: 502px;
+  z-index: 5;
+}
+
+.apple-shadow {
+  width: 352px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  transform: translate(30%, -20%);
+  z-index: 4;
+}
+
+.lower-cont-r {
+  max-width: 573px;
+  padding-top: 260px;
+}
+
+.hero-subhead {
+  max-width: 526.17px;
+
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 120%;
+
+  margin-bottom: 20px;
+}
+
+.descrip {
+  max-width: 500px;
+  line-height: 1.5;
+}
+
+.special-upper-part {
+  margin-bottom: 40px;
+}
+
+.special-item-text {
+  line-height: 1.5;
+}
+
+.hero-modal-btn {
+  display: block;
+  cursor: pointer;
+
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+  color: #2c2c2c;
+  background-color: #ffffff;
+  border: 2px solid #7eb101;
+  border-radius: 30px;
+  padding: 10px 22px;
+  margin-bottom: 100px;
+}
+
+.hero-special-list {
+  display: flex;
+  column-gap: 67px;
+}
+
+.special-item-text {
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
+
+.hero-sub-descrip {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
+  margin-bottom: 16px;
+  margin-top: 8px;
+}
+
+/*================ FINISH KSENIIA ===============*/
+
+/* ================Menu========== */
+.section-menu {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.titel-menu {
+  font-family: “Roboto”;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 49px;
+  text-align: center;
+  color: #2c2c2c;
+  padding-bottom: 20px;
+}
+.description-menu {
+  font-family: “Roboto”;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 19px;
   text-align: center;
   color: #2c2c2c;
   padding-bottom: 40px;
 }
-
 .menu-list {
   display: flex;
   flex-wrap: wrap;
@@ -284,19 +395,17 @@ body {
   height: 397px;
   padding: 41px 40px;
   overflow: hidden;
-
   background: #fefefe;
   border: 16px solid #ffe550;
   border-radius: 197.5px;
 }
-
 .menu-list .item:not(:nth-child(3n)) {
   margin-right: 32px;
 }
-
 .menu-list .item:not(:nth-last-child(-n + 3)) {
   margin-bottom: 32px;
 }
+
 /*================ FINISH VITALIY ===============*/
 
 /*================ START DMYTRO K ===============*/
@@ -305,15 +414,15 @@ body {
 /*================ START DMYTRO ZHD ===============*/
 .footer {
   box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
-  background-image: url(../images/fb1.png), url(../images/fb2.png), url(../images/fb3.png),
-    url(../images/fb4.png), url(../images/fb5.png), url(../images/fb6.png), url(../images/fb7.png),
-    url(../images/fb8.png);
+  background-image: url(../images/fb1.png), url(../images/fb2.png),
+    url(../images/fb3.png), url(../images/fb4.png), url(../images/fb5.png),
+    url(../images/fb6.png), url(../images/fb7.png), url(../images/fb8.png);
   background-repeat: no-repeat;
   /* background-position: bottom left 216px, bottom right 16px, bottom right 134px, bottom left 53px,
     bottom left 340px, bottom center, bottom right 282px, bottom left 310px; */
-  background-position: bottom left 23.82%, bottom right 4.1%, bottom right 17.58%, bottom left 11.79%,
-    bottom left 47.11%, bottom center, bottom right 25.43%, bottom left 32.88%;
-  
+  background-position: bottom left 23.82%, bottom right 4.1%,
+    bottom right 17.58%, bottom left 11.79%, bottom left 47.11%, bottom center,
+    bottom right 25.43%, bottom left 32.88%;
 }
 
 .footer-up {
@@ -383,7 +492,7 @@ body {
 }
 
 .btn-light:is(:hover, :after) {
-  border: 2px solid #FFE450;
+  border: 2px solid #ffe450;
 }
 
 .footer-text {
