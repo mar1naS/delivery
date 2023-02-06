@@ -122,21 +122,92 @@
                 </p>
               </li>
             </ul>
-            <button data-modal-open-2 type="button" class="hero-modal-btn">
+            <button data-second-modal-open type="button" class="hero-modal-btn">
               Order Now
             </button>
           </div>
         </div>
       </section>
+      <section class="section-menu">
+        <div class="container">
+          <h1 class="titel-menu">Some of Our Favorites</h1>
+          <h2 class="description-menu">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </h2>
+          <ul class="list menu-list">
+            <li class="item">
+              <div class="menu-box">
+                <img
+                  src="./images/gamburger.jpg"
+                  alt="gamburger"
+                  width="315"
+                  height="315"
+                />
+              </div>
+            </li>
+            <li class="item">
+              <div class="menu-box">
+                <img
+                  src="./images/pasta.jpg"
+                  alt="pasta"
+                  width="315"
+                  height="315"
+                />
+              </div>
+            </li>
+            <li class="item">
+              <div class="menu-box">
+                <img
+                  src="./images/pizza.jpg"
+                  alt="gamburger"
+                  width="315"
+                  height="315"
+                />
+              </div>
+            </li>
+            <li class="item">
+              <div class="menu-box">
+                <img
+                  src="./images/chicken.jpg"
+                  alt="chicken"
+                  width="315"
+                  height="315"
+                />
+              </div>
+            </li>
+            <li class="item">
+              <div class="menu-box">
+                <img
+                  src="./images/salat.jpg"
+                  alt="salat"
+                  width="315"
+                  height="315"
+                />
+              </div>
+            </li>
+            <li class="item">
+              <div class="menu-box">
+                <img
+                  src="./images/borshch.jpg"
+                  alt="borshch"
+                  width="315"
+                  height="315"
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
       <!-- =======================MODAL WINDOW=============== -->
-      <div data-modal class="backdrop-modal is-hidden">
-        <form
-          class="form-subscribe"
-          name="subscribe"
-          autocomplete="on"
-          novalidate
-        >
-          <div class="modal">
+      <div data-modal data-second-modal class="backdrop-modal is-hidden">
+        <div class="modal">
+          <form
+            form-modal
+            class="form-subscribe"
+            name="subscribe"
+            autocomplete="on"
+            novalidate
+          >
             <h1 class="form-title">Order Form</h1>
 
             <label class="label-name">
@@ -168,13 +239,17 @@
             </label>
             <button type="submit" class="btn btn-send">Send</button>
 
-            <button data-modal-close class="btn-close btn">
+            <button
+              data-modal-close
+              data-second-modal-close
+              class="btn-close btn"
+            >
               <svg width="10" height="10">
-                <use href="../images/icons.svg##icon-close"></use>
+                <use href="../images/icons.svg#icon-close"></use>
               </svg>
             </button>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
