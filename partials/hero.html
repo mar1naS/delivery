@@ -36,7 +36,7 @@
             <div class="swiper-wrapper">
               <div class="item swiper-slide">
                 <img
-                  src="../images/Foto_first.jpg"
+                  src="./images/Foto_first.jpg"
                   alt="meat"
                   width="528"
                   height="528"
@@ -45,7 +45,7 @@
               </div>
               <div class="item swiper-slide">
                 <img
-                  src="../images/Foto_second.jpg"
+                  src="./images/Foto_second.jpg"
                   alt="salat"
                   width="528"
                   height="528"
@@ -53,7 +53,7 @@
               </div>
               <div class="item swiper-slide">
                 <img
-                  src="../images/Foto_third.jpg"
+                  src="./images/Foto_third.jpg"
                   alt="eggs"
                   width="528"
                   height="528"
@@ -73,27 +73,182 @@
           </div>
         </div>
       </section>
-      <div data-modal class="backdrop-modal is-hidden">
-        <div class="modal">
-          <h1 class="btn-title">Order Form</h1>
-          <div class="conteiner form">
-            <form name="contact_us_form" autocomplete="on" novalidate>
-              <label class="mail">
-                <p class="text">Email</p>
-                <input type="email" name="email" />
-              </label>
-              <label class="phone">
-                <p class="text">Phone</p>
-                <input type="phone" name="phone" />
-              </label>
-              <button type="submit" class="btn btn-send">Send</button>
-            </form>
+      <!-- ======================hero2=KSENIIA================= -->
+      <section>
+        <div class="container lower-cont">
+          <div class="lower-cont-l">
+            <div class="apple-cont">
+              <img class="apple-img" src="./images/apple.jpg" alt="apple" />
+              <img
+                class="apple-shadow"
+                src="./images/Ellipse 4.png"
+                alt="shadow"
+              />
+            </div>
           </div>
-          <button data-modal-close class="btn-close btn">
-            <svg width="10" height="10">
-              <use href="../images/icons.svg##icon-close"></use>
-            </svg>
-          </button>
+          <div class="lower-cont-r">
+            <div class="special-upper-part">
+              <h2 class="hero-subhead">Whats Special About Our Offerings</h2>
+              <p class="descrip">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros elementum tristique. Duis
+                cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                commodo diam libero vitae erat.
+              </p>
+            </div>
+            <ul class="hero-special-list list">
+              <li class="hero-special-item">
+                <a href="" class="special-item-link">
+                  <svg class="delivery-icon" width="48" height="48">
+                    <use href="./images/symbol-defs.svg#icon-Icon-Deliv"></use>
+                  </svg>
+                </a>
+                <h3 class="hero-sub-descrip">Fasest Delivery</h3>
+                <p class="special-item-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros.
+                </p>
+              </li>
+              <li class="hero-special-item">
+                <a href="" class="special-item-link">
+                  <svg class="order-icon" width="48" height="48">
+                    <use href="./images/symbol-defs.svg#icon-Icon-Order"></use>
+                  </svg>
+                </a>
+                <h3 class="hero-sub-descrip">Easy To Order</h3>
+                <p class="special-item-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros.
+                </p>
+              </li>
+            </ul>
+            <button data-second-modal-open type="button" class="hero-modal-btn">
+              Order Now
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="section-menu">
+        <div class="container">
+          <h1 class="titel-menu">Some of Our Favorites</h1>
+          <h2 class="description-menu">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </h2>
+          <ul class="list menu-list">
+            <li class="item">
+              <div class="menu-box">
+                <img
+                  src="./images/gamburger.jpg"
+                  alt="gamburger"
+                  width="315"
+                  height="315"
+                />
+              </div>
+            </li>
+            <li class="item">
+              <div class="menu-box">
+                <img
+                  src="./images/pasta.jpg"
+                  alt="pasta"
+                  width="315"
+                  height="315"
+                />
+              </div>
+            </li>
+            <li class="item">
+              <div class="menu-box">
+                <img
+                  src="./images/pizza.jpg"
+                  alt="gamburger"
+                  width="315"
+                  height="315"
+                />
+              </div>
+            </li>
+            <li class="item">
+              <div class="menu-box">
+                <img
+                  src="./images/chicken.jpg"
+                  alt="chicken"
+                  width="315"
+                  height="315"
+                />
+              </div>
+            </li>
+            <li class="item">
+              <div class="menu-box">
+                <img
+                  src="./images/salat.jpg"
+                  alt="salat"
+                  width="315"
+                  height="315"
+                />
+              </div>
+            </li>
+            <li class="item">
+              <div class="menu-box">
+                <img
+                  src="./images/borshch.jpg"
+                  alt="borshch"
+                  width="315"
+                  height="315"
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- =======================MODAL WINDOW=============== -->
+      <div data-modal data-second-modal class="backdrop-modal is-hidden">
+        <div class="modal">
+          <form
+            form-modal
+            class="form-subscribe"
+            name="subscribe"
+            autocomplete="on"
+            novalidate
+          >
+            <h1 class="form-title">Order Form</h1>
+
+            <label class="label-name">
+              <span class="form-title">Name</span>
+              <input
+                type="email"
+                name="name"
+                class="input-type"
+                placeholder="Your name"
+              />
+            </label>
+            <label class="label-name">
+              <span class="form-title">Phone number</span>
+              <input
+                type="email"
+                name="phone"
+                class="input-type"
+                placeholder="+38(0__)___ __ __"
+              />
+            </label>
+            <label class="label-name">
+              <span class="form-title">E-mail</span>
+              <input
+                type="phone"
+                name="email"
+                class="input-type"
+                placeholder="example@gmail.com"
+              />
+            </label>
+            <button type="submit" class="btn btn-send">Send</button>
+
+            <button
+              data-modal-close
+              data-second-modal-close
+              class="btn-close btn"
+            >
+              <svg width="10" height="10">
+                <use href="../images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </main>
