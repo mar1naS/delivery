@@ -75,6 +75,51 @@ body {
   background-color: var(--primary-bcg-color);
 }
 /*================ /START MARYNA ===============*/
+.header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+ }
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: 735px;
+}
+
+.header-list {
+  display: flex;
+  gap: 28px;
+  margin-right: 30px;
+}
+
+.header-nav-link {
+font-size: 14px; 
+line-height: 1.14px;
+color:var(--primary-text-color);
+}
+
+.header-nav-link:hover, .header-nav-link:focus {
+  color: var(--text-hover-color);
+  font-weight: 700;
+  text-decoration-line: underline;
+}
+
+.header-btn {
+  min-width: 98px;
+  height: 32px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+  color: var(--primary-text-color);
+  background-color: #bbf330;
+  border-radius: 30px;
+  border: 0px;
+}
 /*================ /FINISH MARYNA ===============*/
 
 /*================ START VITALIY ===============*/
